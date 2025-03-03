@@ -23,6 +23,7 @@
 
 body {
     font-family: 'Glacial indifference', 'Georgia', serif;
+    background-color: #d7d3c2;
 }
 
 /* Estilos para o menú de navegación */
@@ -107,15 +108,15 @@ p {
 /* Estilos para as preguntas frecuentes */
 #info {
     padding: 60px 20px;
-    background-color: #f1f1f1; /* Cor gris suave para dar contraste */
+    background-color: #d7d3c2; /* Cor gris suave para dar contraste */
     text-align: center;
-    color: #4a3c2c;
+    color: #1d1a11;
 }
 
 h2 {
     font-size: 2.8rem;
     font-weight: bold;
-    color: #6b4f37; /* Marrón terroso */
+    color: #603d09; /* Marrón terroso */
     margin-bottom: 40px;
     margin-top: 60px;
 }
