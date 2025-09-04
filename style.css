@@ -45,7 +45,7 @@ nav ul li a:hover {
 
 /* Estilos para a landing */
 .landing {
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -80,23 +80,32 @@ nav ul li a:hover {
 .galeria {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem auto;
-    max-width: 1000px;
+    gap: 1rem 4rem;
+    margin: 6rem 1rem;
     flex-wrap: wrap;
 }
 .galeria img {
-    width: 100%;
     max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1 1 calc(33% - 1rem);
 }
 
-.big-bottom {
+.foto {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+
+}
+.foto:hover {
+    transform: scale(1.03);
+}
+
+.foto-pe {
     width: 100%;
 }
-.big-bottom img {
+.foto-pe img {
     width: 100%;
     display: block;
 }
