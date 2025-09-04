@@ -93,16 +93,13 @@ nav ul li a:hover {
     flex: 1 1 calc(33% - 1rem);
 }
 
-    .big-bottom {
-      width: 100%;
-      max-width: 1000px;
-      margin: 2rem auto;
-    }
-    .big-bottom img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+.big-bottom {
+    width: 100%;
+}
+.big-bottom img {
+    width: 100%;
+    display: block;
+}
 
 h1 {
     font-size: 5rem;
