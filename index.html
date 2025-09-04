@@ -46,5 +46,37 @@
     <div class="foto-pe">
       <img src="img/foto05.webp" />
     </div>
+
+    <!-- Modal para ampliar imaxe -->
+    <div id="ampliacion">
+      <img id="foto-ampliada" src="" alt="Foto ampliada" />
+    </div>
+
+    <script>
+      // seleccionar todas as fotos pequenas
+      const fotos = document.querySelectorAll('.galeria img')
+      const modal = document.getElementById('ampliacion')
+      const imaxeModal = document.getElementById('foto-ampliada')
+
+      fotos.forEach((foto, num) => {
+        foto.addEventListener('click', () => cambiaFoto(num-1))
+      })
+
+      // pechar ao clicar fóra da imaxe
+      modal.addEventListener('click', (e) => {
+        if (e.target !== imaxeModal) {
+            modal.style.display = 'none'
+        } else {
+            cambiaFoto(imaxeModal.getAttribute('numero'))
+        }
+      })
+
+      cambiaFoto = (fotoActual) => {
+        let foto = ++fotoActual % 3
+        imaxeModal.src= "img/foto0" + (foto+2) + ".webp"
+        imaxeModal.setAttribute('numero', foto)
+        modal.style.display = 'flex'
+      }
+    </script>
   </body>
 </html>
